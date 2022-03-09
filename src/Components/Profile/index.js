@@ -2,10 +2,10 @@ import React from "react";
 const Profile = (props) => {
   const { login, avatar_url, html_url, name } = props.data;
   return (
-    <div className="flex space-x-5 p-5 items-center sm:bg-slate-900">
+    <div className="flex space-x-5 p-5 items-center sm:bg-zinc-900 md:flex-col md:items-start">
       <img
         src={avatar_url}
-        className="rounded-full w-14 h-14"
+        className="rounded-full w-14 h-auto md:w-64"
         alt="git avatar"
       />
       <div>
