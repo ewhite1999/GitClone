@@ -24,8 +24,6 @@ const RepoPage = () => {
     console.log("thus is the repoData" , repoData)
     console.log("thus is the userInfo" , userInfo)
   };
-  
-    
 
   return (
     <>

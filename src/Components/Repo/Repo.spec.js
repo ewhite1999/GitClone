@@ -16,6 +16,7 @@ describe("Repo component", () => {
       language: "HTML",
       forks_count: 0,
       open_issues_count: 0,
+      html_url: "https://test.co",
     };
   });
   beforeEach(() => {
@@ -28,7 +29,12 @@ describe("Repo component", () => {
   });
 
   it("contains a repo name", () => {
-    expect(repo.textContent).toContain("3-column-preview-card-component-main");
+    const link = screen.getByRole("link");
+    expect(link.textContent).toContain("3-column-preview-card-component-main");
+  });
+  test("The repo name takes you to the repo", () => {
+    const link = screen.getByRole("link");
+    expect(link.href).toBe("https://test.co/");
   });
 
   it("contains a description", () => {

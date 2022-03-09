@@ -8,11 +8,12 @@ const Repo = (props) => {
     language,
     forks_count,
     open_issues_count,
+    html_url,
   } = props.data;
   return (
     <li>
       <div>
-        <p>{name}</p>
+        <a href={html_url}>{name}</a>
         <p>{description}</p>
         <div>
           <span>{language}</span>
