@@ -5,7 +5,7 @@ const Profile = (props) => {
     <div className="flex space-x-5 p-5 items-center md:flex-col md:items-start md:h-full">
       <img
         src={avatar_url}
-        className="rounded-full w-14 h-auto md:w-64"
+        className="rounded-full w-14 h-auto md:w-64 lg:w-80"
         alt="git avatar"
       />
       <div>
