@@ -2,11 +2,11 @@
  * @jest-environment jsdom
  */
 import { render, screen } from "@testing-library/react";
-import SearchForm from ".";
+import RepoPage from ".";
 
 describe("form component", () => {
   beforeEach(() => {
-    render(<SearchForm />);
+    render(<RepoPage />);
   });
 
   it("renders a form", () => {
