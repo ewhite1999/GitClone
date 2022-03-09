@@ -11,19 +11,19 @@ const RepoPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const [repoData, userInfo] = await Promise.all([
-      axios.get(`https://api.github.com/users/${username}/repos`),
-      axios.get(`https://api.github.com/users/${username}`),
-    ]);
-
-    setRepoInfo(repoData.data);
-    setUserData(userInfo.data);
-    setUsername("");
-
-    console.log("thus is the repoData", repoData);
-    console.log("thus is the userInfo", userInfo);
+    try {
+      const [repoData, userInfo] = await Promise.all([
+        axios.get(`https://api.github.com/users/${username}/repos`),
+        axios.get(`https://api.github.com/users/${username}`),
+      ]);
+      setRepoInfo(repoData.data);
+      setUserData(userInfo.data);
+      setUsername("");
+    } catch (err) {
+      if (err.response.status === 404);
+      alert("sorry, we can't find a user by that name");
+    }
   };
- 
 
   return (
     <>
