@@ -11,7 +11,7 @@ const Repo = (props) => {
     html_url,
   } = props.data;
   return (
-    <li className="sm:bg-zinc-900">
+    <li>
       <div className=" border-b mx-4 py-6 space-y-2 ">
         <a
           className=" text-blue-300 font-bold text-xl"
