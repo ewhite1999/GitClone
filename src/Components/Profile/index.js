@@ -2,7 +2,7 @@ import React from "react";
 const Profile = (props) => {
   const { login, avatar_url, html_url, name } = props.data;
   return (
-    <div className="flex space-x-5 p-5 items-center md:flex-col md:items-start md:h-full">
+    <div className="flex space-x-5 p-5 pb-0 items-center md:flex-col md:items-start md:h-full">
       <img
         src={avatar_url}
         className="rounded-full w-14 h-auto md:w-64 lg:w-80"
