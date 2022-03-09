@@ -15,6 +15,7 @@ describe("Repo component", () => {
         language: "HTML",
         forks_count: 0,
         open_issues_count: 0,
+        id: 436954790,
       },
       {
         name: "testData",
@@ -23,6 +24,7 @@ describe("Repo component", () => {
         language: "HTML",
         forks_count: 5,
         open_issues_count: 6,
+        id: 23422345,
       },
     ];
   });
