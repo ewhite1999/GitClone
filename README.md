@@ -2,7 +2,7 @@
 
 This site is a git hub clone. You can search for anyone's username to return their profile and repos. The site is fully responsive.
 
-Netlify site : <git-hub-cloned.netlify.app>
+[Netlify site](git-hub-cloned.netlify.app)
 
 ## Table of contents
 
