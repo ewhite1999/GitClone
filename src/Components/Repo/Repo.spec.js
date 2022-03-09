@@ -6,6 +6,7 @@ import Repo from ".";
 describe("Repo component", () => {
   let repoData;
   let repo;
+  let component;
 
   beforeAll(() => {
     repoData = {
@@ -17,9 +18,8 @@ describe("Repo component", () => {
       open_issues_count: 0,
     };
   });
-
   beforeEach(() => {
-    render(<Repo data={repoData} />);
+    component = render(<Repo data={repoData} />);
     repo = screen.queryByRole("listitem");
   });
 
@@ -44,6 +44,7 @@ describe("Repo component", () => {
       expect(repo.textContent).not.toContain("stargazers");
     });
     it("displays stargazers if the value is > 0", () => {
+      component.unmount();
       repoData.stargazers_count = 2;
       render(<Repo data={repoData} />);
       const tempRepo = screen.queryByRole("listitem");
@@ -57,6 +58,7 @@ describe("Repo component", () => {
       expect(repo.textContent).not.toContain("forks");
     });
     it("displays forks if the value is > 0", () => {
+      component.unmount();
       repoData.forks_count = 2;
       render(<Repo data={repoData} />);
       const tempRepo = screen.queryByRole("listitem");
@@ -70,6 +72,7 @@ describe("Repo component", () => {
       expect(repo.textContent).not.toContain("issues");
     });
     it("displays issues if the value is > 0", () => {
+      component.unmount();
       repoData.open_issues_count = 2;
       render(<Repo data={repoData} />);
       const tempRepo = screen.queryByRole("listitem");
