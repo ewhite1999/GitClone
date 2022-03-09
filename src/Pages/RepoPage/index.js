@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const RepoPage = () => {
-  return (
-    <div>RepoPage</div>
-  )
-}
+  return <div>RepoPage</div>;
+};
 
-export default RepoPage
+export default RepoPage;
