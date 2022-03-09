@@ -39,6 +39,7 @@ const RepoPage = () => {
     created_at: "2021-08-12T12:54:00Z",
     updated_at: "2022-01-31T08:45:37Z",
   };
+
   return (
     <>
       <Components.Profile data={data}></Components.Profile>
