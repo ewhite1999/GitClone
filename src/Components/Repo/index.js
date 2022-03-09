@@ -12,14 +12,16 @@ const Repo = (props) => {
   } = props.data;
   return (
     <li>
-      <div>
-        <a href={html_url} rel="noopener noreferrer" target='_blank'>{name}</a>
+      <div className=" border-b-2">
+        <a href={html_url} rel="noopener noreferrer" target="_blank">
+          {name}
+        </a>
         <p>{description}</p>
         <div>
           <span>{language}</span>
-          {stargazers_count && <span>stargazers:{stargazers_count}</span>}
-          {forks_count && <span>forks:{forks_count}</span>}
-          {open_issues_count && <span>issues:{open_issues_count}</span>}
+          {stargazers_count > 0 && <span>stargazers:{stargazers_count}</span>}
+          {forks_count > 0 && <span>forks:{forks_count}</span>}
+          {open_issues_count > 0 && <span>issues:{open_issues_count}</span>}
         </div>
       </div>
     </li>
