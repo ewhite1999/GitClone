@@ -13,7 +13,7 @@ const Repo = (props) => {
   return (
     <li>
       <div>
-        <a href={html_url}>{name}</a>
+        <a href={html_url} rel="noopener noreferrer" target='_blank'>{name}</a>
         <p>{description}</p>
         <div>
           <span>{language}</span>

@@ -35,6 +35,7 @@ const RepoPage = () => {
                 value = {username}
                 required
                 onChange={(e)=> setUsername(e.target.value)}
+                className='text-black'
                 />
             <input type="submit" value="Get Repos" />
         </form>
