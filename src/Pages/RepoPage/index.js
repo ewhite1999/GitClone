@@ -38,7 +38,7 @@ const RepoPage = () => {
         />
         <input type="submit" value="Get Repos" />
       </form>
-      <div className="md:flex md:items-start">
+      <div className="sm:bg-zinc-900 md:flex md:items-start">
         <Components.Profile data={userData}></Components.Profile>
         <RepoList data={repoInfo} />
       </div>
