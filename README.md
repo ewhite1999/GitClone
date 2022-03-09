@@ -1,5 +1,7 @@
 # LAP 1 Debugging Assignment
 
+This site is a git hub clone. You can search for anyone's username to return their profile and repos. The site is fully responsive.
+
 ## Table of contents
 
 - [Installation & Usage](#installation--usage)
@@ -25,7 +27,7 @@
 
 ![mobile](/screenshots/mobile.png)
 
-### On Desktop:
+### On Desktop
 
 ![desktop](/screenshots/desktop.png)
 
@@ -38,6 +40,7 @@
 ### Wins
 
 - The site is fully responsive (try changing your screen size)
+- The site is deployed to netlify
 
 ### Challenges
 
