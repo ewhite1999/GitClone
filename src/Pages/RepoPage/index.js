@@ -29,7 +29,7 @@ const RepoPage = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-wrap mt-8">
+      <div className="flex justify-center items-center flex-wrap mx-4 h-16">
         <form className=" w-full max-w-sm" role="form" onSubmit={handleSubmit}>
           <div className="flex items-center border-b border-blue-500 py-2">
             <input
