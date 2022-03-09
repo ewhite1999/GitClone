@@ -49,7 +49,7 @@ const RepoPage = () => {
           </div>
         </form>
       </div>
-      <div className="sm:bg-[#0a0c10]">
+      <div className="sm:bg-[#0a0c10] min-h-screen">
         <div className="max-w-screen-xl md:flex md:items-start md:p-2 md:pt-5 xl:mx-auto">
           <Components.Profile data={userData}></Components.Profile>
           <RepoList data={repoInfo} />
